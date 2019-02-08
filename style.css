@@ -1,0 +1,48 @@
+body {
+  background-color: #f4f4f4;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  font-family: Helvetica;
+}
+
+.content-wrapper {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 20px 40px;
+}
+
+#read-more {
+  display: none;
+}
+
+#read-more:checked ~ .read-more-content {
+  display: block;
+}
+
+#read-more:checked ~ .read-more-label span {
+  transform: rotate(90deg);
+}
+
+.read-more-label {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.read-more-label span {
+  margin-right: 10px;
+}
+
+.read-more-content {
+  line-height: 1.5;
+  display: none;
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.read-more-content p {
+  margin: 0;
+}
